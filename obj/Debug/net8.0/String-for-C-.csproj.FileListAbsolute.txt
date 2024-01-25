@@ -1,0 +1,15 @@
+C:\Users\13608\Documents\GitHub\String-for-C-\bin\Debug\net8.0\String-for-C-.exe
+C:\Users\13608\Documents\GitHub\String-for-C-\bin\Debug\net8.0\String-for-C-.deps.json
+C:\Users\13608\Documents\GitHub\String-for-C-\bin\Debug\net8.0\String-for-C-.runtimeconfig.json
+C:\Users\13608\Documents\GitHub\String-for-C-\bin\Debug\net8.0\String-for-C-.dll
+C:\Users\13608\Documents\GitHub\String-for-C-\bin\Debug\net8.0\String-for-C-.pdb
+C:\Users\13608\Documents\GitHub\String-for-C-\obj\Debug\net8.0\String-for-C-.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\13608\Documents\GitHub\String-for-C-\obj\Debug\net8.0\String-for-C-.AssemblyInfoInputs.cache
+C:\Users\13608\Documents\GitHub\String-for-C-\obj\Debug\net8.0\String-for-C-.AssemblyInfo.cs
+C:\Users\13608\Documents\GitHub\String-for-C-\obj\Debug\net8.0\String-for-C-.csproj.CoreCompileInputs.cache
+C:\Users\13608\Documents\GitHub\String-for-C-\obj\Debug\net8.0\String-for-C-.dll
+C:\Users\13608\Documents\GitHub\String-for-C-\obj\Debug\net8.0\refint\String-for-C-.dll
+C:\Users\13608\Documents\GitHub\String-for-C-\obj\Debug\net8.0\String-for-C-.pdb
+C:\Users\13608\Documents\GitHub\String-for-C-\obj\Debug\net8.0\String-for-C-.genruntimeconfig.cache
+C:\Users\13608\Documents\GitHub\String-for-C-\obj\Debug\net8.0\ref\String-for-C-.dll
+C:\Users\13608\Documents\GitHub\String-for-C-\obj\Debug\net8.0\String-for-C-.sourcelink.json
