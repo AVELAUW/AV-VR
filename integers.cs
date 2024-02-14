@@ -19,7 +19,7 @@ namespace integers
         //int a1 = 5;
         
         ///<summary>
-        /*
+        /* delete this line and replace the question marks with the correct values
         int ? = 3;
         int ? = 5;
         int ? = 3;
@@ -38,7 +38,7 @@ namespace integers
         //A long is a 64-bit integer
         //long a1 = 5;
 
-        /*
+        /* delete this line and replace the question marks with the correct values
         //longs biggest
         long ? = 5;
         long ? = 237;
@@ -56,7 +56,7 @@ namespace integers
         //A double is a 64-bit floating point
         //double a1 = 5;
 
-        /*
+        /* delete this line and replace the question marks with the correct values
         //doubles bigger than int
         double a2 = ?;
         double b2 = ?;
@@ -73,8 +73,8 @@ namespace integers
         //remove the comments and to get the code to run
         //A short is a 16-bit integer
         //short a1 = 5;
-        /*
 
+        /* delete this line and replace the question marks with the correct values
         //shorts stop at 30 thousand
         short ? = 343;
         short ? = 23;
@@ -93,7 +93,8 @@ namespace integers
         //a decimal is a 128-bit floating point
         //decimal a1 = 5;
 
-        /*
+        /* delete this line and replace the question marks with the correct values
+
         //decimals for more accuracy
         ? a4 = 434;
         ? b4 = 53423;
@@ -116,7 +117,7 @@ namespace integers
 
 
         ///<Booleans>
-        /*
+        /* delete this line and replace the question marks with the correct values
         //conditional statements
         bool something = a5 + a6 > 500;
 
@@ -140,20 +141,20 @@ namespace integers
         //int [] s = {1, 2, 3, 4, 5}; is an Array
 
         /// <summary>
-        /*
+        /* delete this line and replace the question marks with the correct values
         int [] s = {1, 2, 3, 4, 5};
         //forloops
         for(int i = 0; i < s.Length; i++)
         {
             Console.WriteLine("This loop is running");
         }
-        */
+        */ 
 
 
 
 
         ///<whileloops>
-        /*
+        /* delete this line and replace the question marks with the correct values
 
         //while loops
         while (?)
@@ -174,7 +175,10 @@ namespace integers
 
         ///<fibonacci game building>
         //Replace 7 with any number and run the program.
-        /*int num = 7;
+
+        /*delete this line and replace the question marks with the correct values
+        
+        int num = 7;
         Fibonacci(num);
         */ 
         }
