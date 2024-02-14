@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\13608\\Documents\\GitHub\\String-for-C-\\String-for-C-.csproj": {}
+    "C:\\Users\\13608\\Documents\\GitHub\\AV-VR\\String-for-C-.csproj": {}
   },
   "projects": {
-    "C:\\Users\\13608\\Documents\\GitHub\\String-for-C-\\String-for-C-.csproj": {
+    "C:\\Users\\13608\\Documents\\GitHub\\AV-VR\\String-for-C-.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\13608\\Documents\\GitHub\\String-for-C-\\String-for-C-.csproj",
+        "projectUniqueName": "C:\\Users\\13608\\Documents\\GitHub\\AV-VR\\String-for-C-.csproj",
         "projectName": "String-for-C-",
-        "projectPath": "C:\\Users\\13608\\Documents\\GitHub\\String-for-C-\\String-for-C-.csproj",
+        "projectPath": "C:\\Users\\13608\\Documents\\GitHub\\AV-VR\\String-for-C-.csproj",
         "packagesPath": "C:\\Users\\13608\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\13608\\Documents\\GitHub\\String-for-C-\\obj\\",
+        "outputPath": "C:\\Users\\13608\\Documents\\GitHub\\AV-VR\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\13608\\AppData\\Roaming\\NuGet\\NuGet.Config"
