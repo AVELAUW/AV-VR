@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <title>Community Components Example</title>
+    <meta name="description" content="Community Components Example">
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>  
+    <script src="https://cdn.jsdelivr.net/gh/c-frame/aframe-particle-system-component@a5a8449/dist/aframe-particle-system-component.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aframe-simple-sun-sky@^1.2.2/simple-sun-sky.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/c-frame/aframe-extras@d5f3f8/dist/aframe-extras.min.js"></script>
+  <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+<script src="https://unpkg.com/aframe-event-set-component@3.0.3/dist/aframe-event-set-component.min.js"></script>
+  </head>
+<body>
+  <a-scene>
+    <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"
+                event-set__enter="_event: mouseenter; _target: #cylinderText; visible: true"
+                event-set__leave="_event: mouseleave; _target: #cylinderText; visible: false">
+      <a-text id="cylinderText" value="This is a cylinder" align="center" color="#FFF" visible="false" position="0 -0.55 0.55"
+              geometry="primitive: plane; width: 1.75" material="color: #333"></a-text>
+    </a-cylinder>
+
+    <a-camera>
+      <a-cursor></a-cursor>
+    </a-camera>
+  </a-scene>
+  </body>
+</html>

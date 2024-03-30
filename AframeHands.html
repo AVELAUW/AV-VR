@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Quest 3 Touch Controllers</title>
+  <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+  <script src="https://cdn.rawgit.com/donmccurdy/aframe-extras/v6.1.0/dist/aframe-extras.min.js"></script>
+</head>
+<body>
+  <a-scene>
+    <a-sky color="#ECECEC"></a-sky>
+
+    <a-entity oculus-touch-controls="hand: left; model: false">
+      <a-cylinder color="#303F9F" radius="0.03" height="0.1"></a-cylinder>  
+      <a-sphere color="#3F51B5" radius="0.04" position="0 0.05 0"></a-sphere>  
+    </a-entity>
+    
+    <a-box  color = "black" scale = "2 2 2" position = "0 -3 0"> </a-box>
+    
+
+    <a-entity oculus-touch-controls="hand: right; model: false">
+      <a-cylinder color="#303F9F" radius="0.03" height="0.1"></a-cylinder> 
+      <a-sphere color="#3F51B5" radius="0.04" position="0 0.05 0"></a-sphere>  
+    </a-entity>
+    
+  </a-scene>
+</body>
+</html>
