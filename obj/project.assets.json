@@ -8,24 +8,32 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\13608\\.nuget\\packages\\": {}
+    "C:\\Users\\azara\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\13608\\Documents\\GitHub\\AV-VR\\String-for-C-.csproj",
+      "projectUniqueName": "C:\\Users\\azara\\Documents\\GitHub\\AV-VR\\String-for-C-.csproj",
       "projectName": "String-for-C-",
-      "projectPath": "C:\\Users\\13608\\Documents\\GitHub\\AV-VR\\String-for-C-.csproj",
-      "packagesPath": "C:\\Users\\13608\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\13608\\Documents\\GitHub\\AV-VR\\obj\\",
+      "projectPath": "C:\\Users\\azara\\Documents\\GitHub\\AV-VR\\String-for-C-.csproj",
+      "packagesPath": "C:\\Users\\azara\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\azara\\Documents\\GitHub\\AV-VR\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\13608\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\azara\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
