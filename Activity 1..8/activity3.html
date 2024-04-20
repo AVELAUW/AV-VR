@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+        <img id="sky" src="https://cdn.aframe.io/360-image-gallery-bathrooms/01.jpg" />
+      </a-assets>
+
+      <a-sky src="#sky" rotation="0 -130 0"></a-sky>
+
+      <a-box
+        position="-1 0.5 -3"
+        rotation="0 45 0"
+        color="#4CC3D9"
+        animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"
+      ></a-box>
+
+      //create a sphere
+      //position of `0 1.25 -5`
+      //radius of `1.25`
+      //color of `#EF2D5E`
+      //animation property: rotation; to: 0 360 0; loop: true; dur: 5000
+      
+
+      //create a cylinder entity 
+      // with position of `1 0.75 -3` 
+      // with radius of `0.5` 
+      // with height of `1.5` 
+      // with color of `#FFC65D`
+      // animation of `property: rotation; to: 360 0 0; loop: true; dur: 7500`
+    
+
+      //create a plane entity
+      //with position of `0 0 -4`
+      //with rotation of `-90 0 0` 
+      //with width of `4`
+      //with color of `#7BC8A4`
+      
+
+     <!-- create a cone entity -->
+      <!-- with position of "-2 0.5 -5" -->
+      <!-- with color of "#FF6347" (tomato) -->
+      <!-- with radius-bottom of "1" -->
+    <!-- with radius-top of "0.5" -->
+    <!-- with height of "2" -->
+
+      
+      
+      
+      
+      
+      
+      <!-- create a torus entity -->
+      <!-- with position of "2 1 3" -->
+      <!-- with color of "#9370DB" (medium purple) -->
+      <!-- with radius of "1" -->
+      <!-- with radius-tubular of "0.2" -->
+      <!-- with animation of "property: rotation; to: 0 360 0; loop: true; dur: 10000" -->
+
+      
+      
+      
+      <!-- create a dodecahedron entity -->
+      <!-- with position of "-4 2 -6" -->
+      <!-- with color of "#FFD700" (golden) -->
+      <!-- with radius of "0.8" -->
+      
+      
+      
+      
+      
+      
+      <!-- create an octahedron entity -->
+      <!-- with position of "-3 1.5 -7" -->
+      <!-- with color of "#32CD32" (green) -->
+      <!-- with radius of "1" -->
+
+      
+      
+      
+       <!-- create a ring entity -->
+      <!-- with position of "3 0.5 -3" -->
+      <!-- with color of "#FF69B4" (hot pink) -->
+      <!-- with radius-inner of "0.5" -->
+      <!-- with radius-outer of "1" -->
+
+    
+      
+      
+      
+      <!-- create a triangle entity -->
+      <!-- with position of "-2 1 -7" -->
+      <!-- with color of "#00BFFF" (deep sky blue) -->
+      <!-- with vertex-a of "0 1 0" -->
+      <!-- with vertex-b of "-1 -1 1" -->
+      <!-- with vertex-c of "1 -1 1" -->
+      
+      
+      
+      <!-- create a tetrahedron entity -->
+      <!-- with position of "2 1.5 -7" -->
+      <!-- with color of "#8B008B" (dark magenta) -->
+      <!-- with radius of "1" -->
+      
+      
+      
+      
+      
+      
+      //Experiment with changing the camera cursor to three different colors `green`, `red`, purple
+      <a-camera>
+        <a-cursor color = "green" ></a-cursor>
+      </a-camera>
+    </a-scene>
+  </body>
+</html>
