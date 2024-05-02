@@ -29,6 +29,8 @@
         <img id="scream" src="https://cdn.aframe.io/examples/mixed-reality/anchor/images/scream.png" crossorigin="anonymous"/>
         <img id="vangogh" src="https://cdn.aframe.io/examples/mixed-reality/anchor/images/vangogh.png" crossorigin="anonymous"/>
       </a-assets>
+
+      
       <a-entity
         id="painting"
         position="0 1.6 -0.75"
@@ -37,10 +39,12 @@
         painting
         painting-changer
         grabbable></a-entity>
+
+      
       <a-entity id="rightHand" hand-tracking-grab-controls="hand: right" anchor-grabbed-entity></a-entity>
 
-      //Create a right hand entity
-      <a-entity id="leftHand" hand-tracking-grab-controls="hand: left" anchor-grabbed-entity></a-entity>
+      //Create a left hand entity with id = `leftHand` hand-tracking-grab-controls = `hand: left` and `anchor-grabbed-entity`
+      
     </a-scene>
     <script src="button.js"></script>
   </body>
