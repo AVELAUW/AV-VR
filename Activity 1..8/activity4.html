@@ -4,11 +4,23 @@
     <meta charset="utf-8">
     <title>Anchor (Mixed Reality) • A-Frame</title>
     <meta name="description" content="Anchor (Mixed Reality) • A-Frame">
-    <script src="aframe-master.js"></script>
-    <script src="info-message.js"></script>
-    <script src="anchor-grabbed-entity.js"></script>
-    <script src="painting-changer.js"></script>
-    <script src="painting.js"></script>
+
+    //replace ? below with `aframe-master.js` 
+    <script src="?"></script>
+
+    //replace ? below with `info-message.js`
+    <script src="?"></script>
+
+    //replace ? below with `anchor-grabbed-entity.js`
+    <script src=""></script>
+
+    //replace ? below with `painting-changer.js`
+    <script src="?"></script>
+
+    //replace ? below with `painting.js`
+    <script src="?"></script>
+
+    
   </head>
   <body>
     <a-scene
@@ -17,6 +29,7 @@
       button
       xr-mode-ui="XRMode: ar"
       info-message="htmlSrc: #messageText">
+      
       <a-assets  timeout="10000">
         <!-- Model by theGentleGiant https://sketchfab.com/3d-models/vintage-painting-dani-3fdd92904c2b44028bef28b33e897d9f -->
         <a-asset-item id="frame"
@@ -30,15 +43,17 @@
         <img id="vangogh" src="https://cdn.aframe.io/examples/mixed-reality/anchor/images/vangogh.png" crossorigin="anonymous"/>
       </a-assets>
 
-      
+
+      Add the following in this entity
       <a-entity
-        id="painting"
-        position="0 1.6 -0.75"
-        gltf-model="#frame"
-        anchored="persistent: true"
-        painting
-        painting-changer
-        grabbable></a-entity>
+      //id = `painting` 
+      //position = `0 1.6 -0.75` 
+      //gltf-model = `#frame` 
+      //anchored = `persistent: true` 
+      //painting 
+      //painting-changer
+      //grabbable
+      ></a-entity>
 
       
       <a-entity id="rightHand" hand-tracking-grab-controls="hand: right" anchor-grabbed-entity></a-entity>
@@ -46,7 +61,9 @@
       //Create a left hand entity with id = `leftHand` hand-tracking-grab-controls = `hand: left` and `anchor-grabbed-entity`
       
     </a-scene>
-    <script src="button.js"></script>
+
+    //replace ? below with button.js
+    <script src="?"></script>
   </body>
 </html>
 
