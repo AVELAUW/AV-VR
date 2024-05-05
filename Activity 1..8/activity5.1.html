@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Hand Tracking Grab Controls • A-Frame</title>
+    <meta name="description" content="Hand Tracking Grab Controls • A-Frame" />
+
+    <!-- Replace the question mark below with `aframe-master.js` -->
+    <script src="?"></script>
+
+
+    <!-- //replace the question mark below with `spatial-utils.js` -->
+    <script src="?"></script>
+
+
+    <!-- Replace the question mark below with `spatial-modal.js` -->
+    <script src="?"></script>
+
+
+    <!-- Create a script below with source `spatial-hero-image.js` -->
+    <script src="?"></script>
+
+
+    <!-- Create a script below with source `info-message.js` -->
+    <script src="?"></script>
+
+
+    <!-- Create a script below with source  `hover.js` -->
+    <script src="?"></script>
+
+    <!-- Apis are down below -->
+    <script src="https://unpkg.com/aframe-environment-component@1.3.4/dist/aframe-environment-component.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/mayognaise/aframe-hand-tracking-components@92d4156/dist/aframe-hand-tracking-components.min.js"></script>
+
+    <!-- Add this API in place of the ? and paste this `https://cdn.jsdelivr.net/gh/mayognaise/aframe-cv-utils@2.0.0/dist/aframe-cv-utils.min.js` -->
+    <script src="?"></script>
+   
+  </head>
+
+  <body>
+
+    <!-- Replace the mark ? with false -->
+    <a-scene
+      environment
+      obb-collider="showColliders: ?"
+      info-message="htmlSrc: #messageText"
+    >
+
+    <!-- Replace the id ? with `messageText` and source ? with `message.html`  -->
+      <a-assets>
+        <a-asset-item id="?" src="?"></a-asset-item>
+        <img
+          id="ubuntu"
+          src="https://cdn.glitch.global/63b0f4f4-5f0f-425d-89c6-0d8b2d769d5f/ubuntu-desktop.png?v=1714942161923"
+        />
+      </a-assets>
+
+<!-- Replace the question mark below with position value `0 1.5 0` -->
+      <a-entity
+        camera
+        position="?"
+        look-controls
+        wasd-controls
+      ></a-entity>
+
+<!-- Replace position ? with `0 1.6 -1` -->
+      <a-entity position="?" grabbable hover>
+        <a-entity
+          spatial-modal="width: 1.81; height: 1.035; roundCorners: false"
+        >
+          <a-entity
+            spatial-hero-image="src: #ubuntu; width: 1.775; height: 1; roundCorners: false"
+            position="0 0 0.001"
+          ></a-entity>
+        </a-entity>
+      </a-entity>
+
+
+      <a-entity
+        id="rightHand"
+        hand-tracking-grab-controls="hand: right"
+      ></a-entity>
+      <!-- //create left hand entity component with id `leftHand` and hand-tracking-grab-controls `hand: right` -->
+
+      </a-entity>
+    </a-scene>
+  </body>
+</html>
