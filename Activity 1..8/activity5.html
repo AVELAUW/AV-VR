@@ -46,15 +46,16 @@
       </a-assets>
 
 
-      <a-entity
-        id="boxGeometry"
-        position="0 2.0 -1"
-        rotation="45 45 0"
-        geometry="primitive: box; height: 0.6; width: 0.6; depth: 0.6"
-        material="color: #ff4b5c"
+      <!-- Create a-entity with 
+        id of `boxGeometry`
+        position of `0 2.0 -1`
+        rotation of `45 45 0`
+        geometry of `primitive: box; height: 0.6; width: 0.6; depth: 0.6`
+        material of `color: #ff4b5c`
+
         size-change
-        scale="0.5 0.5 0.5"
-      ></a-entity>
+        scale of `0.5 0.5 0.5`
+       -->
 
 
        <a-entity
@@ -79,7 +80,7 @@
         visible="false"
         scale="0.5 0.5 0.5"
       ></a-entity>
-      
+
       <a-entity id="menu" menu position="0 1.5 -0.5" rotation="-45 0 0" event-manager>
         <a-entity slider position="0 0.10 0"></a-entity>
         <a-entity id="sphereButton" button="label: sphere" position="-0.15 0 0"></a-entity>
