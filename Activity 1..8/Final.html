@@ -4,18 +4,42 @@
     <meta charset="utf-8">
     <title>Laser input UI</title>
     <meta name="description" content="Full Stack Extended Reality Development">
-    <script src="aframe-master.js"></script>
-    <script src="https://unpkg.com/aframe-environment-component@1.3.4/dist/aframe-environment-component.min.js"></script>
-    <script src="info-message.js"></script>
-    <script src="highlight.js"></script>
-    <script src="info-panel.js"></script>
-    <script src="aabb-collider.js"></script>
-    <script src="grab.js"></script>
-    <script src="https://unpkg.com/aframe-environment-component@1.3.4/dist/aframe-environment-component.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.0/dist/mindar-image.prod.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.0/dist/mindar-image-aframe.prod.js"></script>
-    <script src="https://unpkg.com/aframe-hand-controls@1.0.0/dist/aframe-hand-controls.min.js"></script>
-    <script src="https://unpkg.com/super-hands@3.0.1/dist/super-hands.min.js"></script>
+    <!-- replace ? below in `aframe-master.js` -->
+    <script src="?"></script>
+
+    <!-- replace with ? with API `https://unpkg.com/aframe-environment-component@1.3.4/dist/aframe-environment-component.min.js ` -->
+    <script src="?"></script>
+
+    <!-- replace ? with infro-messafe.js -->
+    <script src="?"></script>
+
+    <!-- replace ? with `highlight.js` -->
+    <script src="?"></script>
+
+    <!-- replace ? with `info-panel.js` -->
+    <script src="?"></script>
+
+    <!-- Replace ? with `aabb-collider.js` -->
+    <script src="?"></script>
+
+    <!-- Replace ? with `grab.js` -->
+    <script src="?"></script>
+
+    <!-- Replace ? with `https://unpkg.com/aframe-environment-component@1.3.4/dist/aframe-environment-component.min.js` -->
+    <script src="?"></script>
+
+    <!-- replace ? with `https://cdn.jsdelivr.net/npm/mind-ar@1.2.0/dist/mindar-image.prod.js` -->
+    <script src="?"></script>
+
+    <!-- Create a script with source `https://cdn.jsdelivr.net/npm/mind-ar@1.2.0/dist/mindar-image-aframe.prod.js`  -->
+    <script src="?"></script>
+
+
+    <!-- Create a script with source `https://unpkg.com/aframe-hand-controls@1.0.0/dist/aframe-hand-controls.min.js` -->
+    <script src="?"></script>
+
+    <!-- Create a script with source `https://unpkg.com/super-hands@3.0.1/dist/super-hands.min.js` -->
+    <script src="?"></script>
   
   
   </head>
@@ -33,7 +57,9 @@
        <a-assets
         renderer="colorManagement: true;">
 
-        <a-mixin id="AVELAFitBit"
+        <!-- Replace a mixin id ? with `AVELAFitBit` -->
+        <!-- Replace gtlf-model ? with Poly.glb URL under assets -->
+        <a-mixin id="?"
                  event-set__grab="material.color: #FFEF4F"
                  event-set__grabend="material.color: #F2E646"
                  event-set__hit="material.color: #F2E646"
@@ -42,14 +68,18 @@
                  event-set__mouseenter="material.color: #F2E646"
                  event-set__mouseleave="material.color: #EF2D5E"
                  event-set__mouseup="material.color: #F2E646"
-                 gltf-model="https://cdn.glitch.global/59400464-5bf2-4570-b881-9f00a928329d/poly.glb?v=1716749380397"
+
+                 
+                 gltf-model="?"
+                 
                   super-hands-collider-scale-grab="maxScale: 5 5 5; minScale: 0.1 0.1 0.1"
                  material="color: #EF2D5E;"></a-mixin>
       </a-assets>
 
 
-        
-           <a-entity class = "AVELAFitBit" mixin = "AVELAFitBit" position = "0 1.453 -0.395" scale = "1 1 1" rotation = "0 90 0">  </a-entity>
+        <!-- Replace mixin ? with `AVELAFitBit` -->
+        <!-- Replace scale ? with `1 1 1` -->
+           <a-entity class = "AVELAFitBit" mixin = "?" position = "0 1.453 -0.395" scale = "?" rotation = "0 90 0">  </a-entity>
         
       
         
@@ -58,18 +88,23 @@
       
         
 <!--   AR       -->
-        <img id="kazetachinu" src="https://cdn.glitch.global/59400464-5bf2-4570-b881-9f00a928329d/Screenshot%202024-05-26%20225043.png?v=1716789095223" crossorigin="anonymous"/>
-        <img id="kazetachinuPoster" src="https://cdn.glitch.global/59400464-5bf2-4570-b881-9f00a928329d/Screenshot%202024-05-26%20222458.png?v=1716787511078" crossorigin="anonymous"/>
+<!-- Replace src ? below with URL of `AR png` -->
+<!-- Replace KazetachinuPoster src ? with URL of `bitmoji snapshot` -->
+        <img id="kazetachinu" src="?" crossorigin="anonymous"/>
+        <img id="kazetachinuPoster" src="?" crossorigin="anonymous"/>
      
         
 <!--    VR      -->
-        <img id="ponyo" src="https://cdn.glitch.global/59400464-5bf2-4570-b881-9f00a928329d/apple-apple-vision.gif?v=1716788452796" crossorigin="anonymous"/>
-        <img id="ponyoPoster" src="https://cdn.glitch.global/59400464-5bf2-4570-b881-9f00a928329d/Screenshot%202024-05-26%20222924.png?v=1716787776570" crossorigin="anonymous"/>
+<!-- Replace src ? with URL of `Apple vision pro gif` -->
+<!-- Replace ponyoPoster id ? with URL of `Quest3 headset` -->
+        <img id="ponyo" src="?" crossorigin="anonymous"/>
+        <img id="ponyoPoster" src="?" crossorigin="anonymous"/>
         
         
 <!--  MR         -->
-        <img id="karigurashi" src="https://cdn.glitch.global/59400464-5bf2-4570-b881-9f00a928329d/quesdt.png?v=1716788678000" crossorigin="anonymous"/>
-        <img id="karigurashiPoster" src="https://cdn.glitch.global/59400464-5bf2-4570-b881-9f00a928329d/Screenshot%202024-05-26%20223114.png?v=1716787889487" crossorigin="anonymous"/>
+<!-- Create a img id of `karigurashi` and src of URL of `MR png` file and crossorigin `anonymous`-->
+<!-- Create an img id of `karigurashiPoster` and src URL of `Quest3 headset` and crossorigin `anonymous` -->
+   
         
         <a-mixin
           id="frame"
@@ -116,8 +151,17 @@
 
 
 
-      <!-- Hand controls -->
-      <a-entity id="leftHand" hand-tracking-controls="hand: left;  handModelOpacity: 0.5; handModelStretchFactor: 0.8"  laser-controls="hand: left" raycaster="objects: .raycastable, .AVELAFitBit" aabb-collider="objects: .cube, .AVELAFitBit" grab></a-entity>
+      <!-- Create your Left Hand controls -->
+      <!-- left hand properties should be -->
+      <!-- id of `leftHand` -->
+      <!-- hand-tracking-controls of `hand: left;  handModelOpacity: 0.5; handModelStretchFactor: 0.8` -->
+      <!-- laser-controls of `hand: left` -->
+      <!-- raycaster of `objects: .raycastable, .AVELAFitBit` -->
+      <!-- aabb-collider of `objects: .cube, .AVELAFitBit` -->
+      <!-- lastly property of `grab` -->
+      
+
+
       <a-entity id="rightHand" hand-tracking-controls="hand: right;   handModelOpacity: 0.5; handModelStretchFactor: 0.8" laser-controls="hand: right" raycaster="objects: .raycastable, .AVELAFitBit" line="color: #118A7E" aabb-collider="objects: .cube, .AVELAFitBit" grab></a-entity>
       
       
@@ -125,8 +169,8 @@
    
 
 
-
-      <a-entity id="ui" position="0 1.6 -2.5">
+      <!-- Replace the ? position with `0 1.6 -2.5` -->
+      <a-entity id="ui" position="?">
         <!-- Poster menu -->
         <a-entity id="menu" highlight>
           <a-entity id="karigurashiButton" position="-0.8 0 0" mixin="frame" class="raycastable menu-button">
