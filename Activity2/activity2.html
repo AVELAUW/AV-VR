@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Tracked Controls</title>
+    <meta name="description" content="Tracked Controls – A-Frame">
+
+    <script src="aframe-master.js"></script>
+    <script src="aabb-collider.js"></script>
+    <script src="grab.js"></script>
+    <script src="ground.js"></script>
+    <script src="skyGradient.js"></script>
+
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+    <script src="https://cdn.rawgit.com/donmccurdy/aframe-extras/v6.1.0/dist/aframe-extras.min.js"></script>
+    <script src="https://unpkg.com/aframe-event-set-component@4.0.1/dist/aframe-event-set-component.min.js"></script>
+  </head>
+
+  <body>
+
+    <a-scene renderer="colorManagement: true;"
+             cursor="rayOrigin: mouse"
+             raycaster="objects: [cube]"
+             fog="color: #bc483e; near: 0; far: 65;">
+
+      <a-assets>
+        <a-mixin id="cube"
+                 event-set__grab="material.color: #FFEF4F"
+                 event-set__grabend="material.color: #F2E646"
+                 event-set__hit="material.color: #F2E646"
+                 event-set__hitend="material.color: #EF2D5E"
+                 event-set__mousedown="material.color: #FFEF4F"
+                 event-set__mouseenter="material.color: #F2E646"
+                 event-set__mouseleave="material.color: #EF2D5E"
+                 event-set__mouseup="material.color: #F2E646"
+                 geometry="primitive: box; height: 0.30; width: 0.30; depth: 0.30"
+                 material="color: #EF2D5E">
+        </a-mixin>
+
+        <a-asset-item id="ground" src="https://cdn.aframe.io/examples/tracked-controls/ground.glb"></a-asset-item>
+      </a-assets>
+
+      <a-assets>
+        <a-mixin id="sphere"
+                 event-set__grab="material.color: #FFEF4F"
+                 event-set__grabend="material.color: #F2E646"
+                 event-set__hit="material.color: #F2E646"
+                 event-set__hitend="material.color: #EF2D5E"
+                 event-set__mousedown="material.color: #FFEF4F"
+                 event-set__mouseenter="material.color: #F2E646"
+                 event-set__mouseleave="material.color: #EF2D5E"
+                 event-set__mouseup="material.color: #F2E646"
+                 geometry="primitive: sphere; radius: 0.3"
+                 material="color: #EF2D5E">
+        </a-mixin>
+      </a-assets>
+
+      <a-entity position="0 0 -0.5">
+        <a-entity class="sphere" mixin="sphere" position="0.30 1.65 0" scale="1 1 1"></a-entity>
+      </a-entity>
+
+      <a-entity position="0 0 -0.5">
+        <a-entity class="cube" mixin="cube" position="0.30 1.65 0"></a-entity>
+        <a-entity class="cube" mixin="cube" position="0 1.95 0"></a-entity>
+        <a-entity class="cube" mixin="cube" position="-0.30 1.65 0"></a-entity>
+
+        <a-entity class="cube" mixin="cube" position="0.60 1.35 0"></a-entity>
+        <a-entity class="cube" mixin="cube" position="0.60 1.05 0"></a-entity>
+        <a-entity class="cube" mixin="cube" position="0.60 0.75 0"></a-entity>
+        <a-entity class="cube" mixin="cube" position="0.60 0.45 0"></a-entity>
+        <a-entity class="cube" mixin="cube" position="0.60 0.15 0"></a-entity>
+
+        <a-entity class="cube" mixin="cube" position="0.30 0.75 0"></a-entity>
+        <a-entity class="cube" mixin="cube" position="0 0.75 0"></a-entity>
+        <a-entity class="cube" mixin="cube" position="-0.30 0.75 0"></a-entity>
+
+        <a-entity class="cube" mixin="cube" position="-0.60 1.35 0"></a-entity>
+        <a-entity class="cube" mixin="cube" position="-0.60 1.05 0"></a-entity>
+        <a-entity class="cube" mixin="cube" position="-0.60 0.75 0"></a-entity>
+        <a-entity class="cube" mixin="cube" position="-0.60 0.45 0"></a-entity>
+        <a-entity class="cube" mixin="cube" position="-0.60 0.15 0"></a-entity>
+
+        <a-entity id="sky"
+                  geometry="primitive: sphere; radius: 65"
+                  material="shader: skyGradient; colorTop: #353449; colorBottom: #BC483E; side: back">
+        </a-entity>
+
+        <a-entity ground></a-entity>
+
+        <a-entity light="type: point; color: #f4f4f4; intensity: 0.1" position="-2.5 1.2 2.2"></a-entity>
+        <a-entity light="type: point; color: #f4f4f4; intensity: 0.1" position="-20 -7 -40"></a-entity>
+        <a-entity light="type: ambient; color: #f4f4f4; intensity: 0.25" position="-8 10 -18"></a-entity>
+      </a-entity>
+
+      <a-entity laser-controls="hand: left"
+                position="0.05 0.1 -0.05"
+                aabb-collider="objects: .cube, .sphere;"
+                grab>
+      </a-entity>
+
+      <a-entity laser-controls="hand: right"
+                position="-0.05 0.1 -0.05"
+                aabb-collider="objects: .cube, .sphere;"
+                grab>
+      </a-entity>
+
+      <a-cylinder position="1 0.5 -1"
+                  radius="0.2"
+                  height="0.5"
+                  color="#FFC107">
+      </a-cylinder>
+
+      <a-entity position="0 1.6 2" camera look-controls wasd-controls></a-entity>
+
+      <a-entity position="0 8 0" scale="2 2 2">
+
+        <a-sphere color="#F5C85D" position="-13 2 -10" radius="4"></a-sphere>
+        <a-sphere color="#AF886D" position="-7 2 -10" radius=".25"></a-sphere>
+        <a-sphere color="#ECBFBF" position="-5 2 -10" radius=".5"></a-sphere>
+        <a-sphere color="#6DCBE7" position="-3 2 -10" radius=".5"></a-sphere>
+        <a-sphere color="#CF503A" position="-1 2 -10" radius=".25"></a-sphere>
+        <a-sphere color="#C9957A" position="1 2 -10" radius="1"></a-sphere>
+        <a-sphere color="#F8EC99" position="4 2 -10" radius=".8"></a-sphere>
+        <a-sphere color="#73AAF8" position="7 2 -10" radius=".75"></a-sphere>
+        <a-sphere color="#3453BD" position="10 2 -10" radius=".75"></a-sphere>
+
+        <a-entity id="saturn-container" position="4 2 -10">
+          <a-sphere radius=".8" color="#F8EC99"></a-sphere>
+          <a-torus color="#57524A" segments-tubular="50" radius="3.2" radius-tubular="0.1"
+                   rotation="90 0 0" scale=".44 .44 0.04"></a-torus>
+          <a-torus color="#A29A87" segments-tubular="50" radius="2.4" radius-tubular="0.2"
+                   rotation="90 0 0" scale=".44 .44 0.04"></a-torus>
+        </a-entity>
+
+        <a-entity id="uranus-container" position="7 2 -10">
+          <a-sphere radius=".75" color="#73AAF8"></a-sphere>
+          <a-torus color="#FFFFFF" segments-tubular="50" radius="1.5" radius-tubular="0.01"
+                   rotation="-10 90 0" scale=".75 .75 0.075"></a-torus>
+        </a-entity>
+
+      </a-entity>
+
+    </a-scene>
+  </body>
+</html>

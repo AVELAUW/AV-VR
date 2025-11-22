@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Anchor (Mixed Reality) • A-Frame</title>
+    <meta name="description" content="Anchor (Mixed Reality) • A-Frame">
+
+    <!-- replace ? below with `aframe-master.js`  -->
+    <script src="aframe-master.js"></script>
+
+    <!-- replace ? below with `info-message.js` -->
+    <script src="info-message.js"></script>
+
+    <!-- replace ? below with `anchor-grabbed-entity.js` -->
+    <script src="anchor-grabbed-entity.js"></script>
+
+    <!-- replace ? below with `painting-changer.js` -->
+    <script src="painting-changer.js"></script>
+
+    <!-- replace ? below with `painting.js` -->
+    <script src="painting.js"></script>
+
+  </head>
+  <body>
+    <a-scene
+      obb-collider="showColliders: false"
+      renderer="colorManagement: true;"
+      button
+      xr-mode-ui="XRMode: ar"
+      info-message="htmlSrc: #messageText">
+      
+      <a-assets timeout="10000">
+        <a-asset-item id="frame"
+          src="https://cdn.aframe.io/examples/mixed-reality/anchor/models/painting/scene.gltf"
+          response-type="arraybuffer"></a-asset-item>
+
+        <a-asset-item id="messageText" src="message.html"></a-asset-item>
+
+        <img id="helloaframe" src="https://cdn.aframe.io/examples/mixed-reality/anchor/images/helloaframe.png" crossorigin="anonymous"/>
+        <img id="greco" src="https://cdn.aframe.io/examples/mixed-reality/anchor/images/greco.png" crossorigin="anonymous"/>
+        <img id="mucha" src="https://cdn.aframe.io/examples/mixed-reality/anchor/images/mucha.png" crossorigin="anonymous"/>
+        <img id="scream" src="https://cdn.aframe.io/examples/mixed-reality/anchor/images/scream.png" crossorigin="anonymous"/>
+        <img id="vangogh" src="https://cdn.aframe.io/examples/mixed-reality/anchor/images/vangogh.png" crossorigin="anonymous"/>
+      </a-assets>
+
+
+      <!-- Completed per instructions -->
+      <a-entity
+        id="painting"
+        position="0 1.6 -0.75"
+        gltf-model="#frame"
+        anchored="persistent: true"
+        painting
+        painting-changer
+        grabbable>
+      </a-entity>
+
+      <a-entity id="rightHand" hand-tracking-grab-controls="hand: right" anchor-grabbed-entity></a-entity>
+
+      <!-- Left Hand Entity -->
+      <a-entity id="leftHand" hand-tracking-grab-controls="hand: left" anchor-grabbed-entity></a-entity>
+
+    </a-scene>
+
+    <!-- replace ? below with button.js -->
+    <script src="button.js"></script>
+  </body>
+</html>
